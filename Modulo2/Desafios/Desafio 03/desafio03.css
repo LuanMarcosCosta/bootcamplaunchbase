@@ -48,7 +48,7 @@ body {
 .card p {
     display: grid;
     grid-template-columns: 1fr;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .card_image_container img {
@@ -70,19 +70,28 @@ body {
 
 .modal {
     background-color: white;
-    width: 90%;
-    height: 90%;
+    width: 70%;
+    height: 70%;
     margin: 5vh auto;
     position: relative;
 }
 
-.modal .close_modal {
+.modal .close_modal,
+.maximize_modal {
     color: black;
-    position: absolute;
+    position: static;
     right: 0;
     top: 8px;
     right: 8px;
     cursor: pointer;
+}
+
+.maximize_modal {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
 }
 
 
