@@ -1,0 +1,23 @@
+{
+    "name": "Desafios",
+    "main": "server.js",
+    "scripts": {
+        "start": "nodemon server.js"
+
+    },
+    "keywords": [],
+    "dependencies": {
+        "express": "^4.17.1",
+        "nunjucks": "^3.2.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.6"
+
+    },
+    "emmet.includeLanguages": {
+        "njk": "html"
+    },
+    "vsicons.associations.files": [
+        { "icon": "nunjucks", "extensions": ["njk"], "format": "svg" }
+    ]
+}
