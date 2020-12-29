@@ -12,7 +12,7 @@ nunjucks.configure("views", {
 })
 
 server.get("/", function(req, res) {
-    return res.render("about.njk")
+    return res.render("about")
 })
 
 
