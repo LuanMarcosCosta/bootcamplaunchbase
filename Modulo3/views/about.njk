@@ -1,15 +1,20 @@
-{% extends "layout.njk" %} {% block head %}
-<title> Sobre - Luãn Costa </title>
-{% endblock %} {% block content %}
-<div id="warapper">
-    <img src="https://avatars0.githubusercontent.com/u/36084152?s=460&u=e440dc38fH4aYeFL7mbP3WEV4Y78X3TMRmAzpmRc&v=4" alt="Luãn Costa">
-    <h1>Luãn Costa</h1>
-    <h2>Podcaster, Leitor e Escritor</h2>
-    <p>Estudante e amante de novas tecnologias e conceitos da modernidade!</p>
-</div>
+{% extends "layout.njk" %} 
 
-<div class="links" id="links-footer">
-    <a href="https://github.com/LuanMarcosCosta" target="blank"> GitHub</a>
-    <a href="https://www.instagram.com/luan_costa_21/" target="blank"> Instagram</a>
-</div>
+{% block head %}
+    <title> Sobre - {{about.name}} </title>
+{% endblock %} 
+
+{% block content %}
+    <div id="warapper">
+        <img src="{{about.avatar_url}}" alt="Imagem de {{about.name}}">
+        <h1>{{about.name}}</h1>
+        <h2>{{about.role}}</h2>
+        <p>{{about.description}}</p>
+    </div>
+
+    <div  id="links-footer" class="links">
+        {% for link in about.links %}
+            <a href="{{links.url}}" target="_blank"> {{links.name}}</a>
+        {% endfor %}
+    </div>
 {% endblock %}

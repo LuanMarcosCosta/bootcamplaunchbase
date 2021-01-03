@@ -93,6 +93,8 @@ header {
 
 .card {
     background-color: var(--color-rocket);
+    display: grid;
+    cursor: pointer;
 }
 
 .card__image_container img {
@@ -107,6 +109,7 @@ header {
 .card_info {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .card_price {
@@ -160,4 +163,40 @@ iframe {
     height: 90%;
     position: absolute;
     top: 5%;
+}
+
+
+/* === Featured === */
+
+.featured-warapper.card__image_container {
+    position: relative;
+}
+
+.featured {
+    background: #f7d05f;
+    color: #111;
+    padding: 2px 8px;
+    position: absolute;
+    right: 5px;
+    border-radius: 16px;
+}
+
+
+/* === VIDEO PAGE === */
+
+.video {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card__video_container {
+    position: relative;
+    padding-top: 62.5%;
+}
+
+.card__video_container iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
 }
