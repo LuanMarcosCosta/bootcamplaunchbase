@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 :root {
     --primary-color: #7159c1;
+    --second-color: #F7DF1E;
 }
 
 * {
@@ -122,4 +123,17 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     color: var(--primary-color);
+}
+
+.details .item span {
+    padding: 8px 16px;
+    background-color: var(--second-color);
+    border-radius: 16px;
+    color: #777;
+    margin-right: 4px;
+    margin-top: 8px;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
 }
