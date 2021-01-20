@@ -14,11 +14,3 @@ body {
     background-color: var(--primary-color);
     font-family: 'Roboto', sans-serif;
 }
-
-header {
-    background-color: white;
-    width: 100%;
-    padding: 34px;
-    text-align: center;
-    box-sizing: border-box;
-}
