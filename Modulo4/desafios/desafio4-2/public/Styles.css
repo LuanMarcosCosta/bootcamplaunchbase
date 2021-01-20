@@ -14,3 +14,54 @@ body {
     background-color: var(--primary-color);
     font-family: 'Roboto', sans-serif;
 }
+
+header {
+    padding: 16px;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.links a:hover {
+    transition: 300ms;
+    color: var(--primary-color);
+}
+
+.card {
+    background-color: white;
+    width: 900px;
+    height: 450px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.details {
+    padding: 32px;
+}
+
+.details .item:last-child {
+    border: none;
+}
+
+.details .item {
+    margin: 12px 0;
+    border-bottom: solid 1px #000;
+}
+
+.details .item span {
+    padding: 8px 16px;
+    border-radius: 16px;
+    color: #777;
+    margin-right: 4px;
+    margin-top: 8px;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}
