@@ -51,16 +51,17 @@ header {
 }
 
 .details .item span {
-    padding: 8px 16px;
+    padding: 8px 8px;
     border-radius: 16px;
     color: #777;
     display: inline-block;
     font-weight: bold;
     font-size: 12px;
+    display: block;
 }
 
 .details .item span:first-child {
-    padding-top: 16px;
+    padding-top: 8px;
     font-size: 18px;
     color: #7159c1;
     text-transform: uppercase;

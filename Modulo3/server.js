@@ -45,6 +45,7 @@ server.get("/video", function(req, res) {
         if (!video) {
             return res.send("Video Not Found")
         }
+        return video
     })
 
     return res.render("video.njk", { item: video })
