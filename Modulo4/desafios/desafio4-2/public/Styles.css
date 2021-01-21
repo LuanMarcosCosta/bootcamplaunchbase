@@ -38,15 +38,11 @@ header {
     height: 450px;
     margin: 50px auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% 60%;
 }
 
 .details {
-    padding: 32px;
-}
-
-.details .item:last-child {
-    border: none;
+    padding: 16px;
 }
 
 .details .item {
@@ -58,10 +54,18 @@ header {
     padding: 8px 16px;
     border-radius: 16px;
     color: #777;
-    margin-right: 4px;
-    margin-top: 8px;
     display: inline-block;
     font-weight: bold;
-    text-transform: uppercase;
     font-size: 12px;
+}
+
+.details .item span:first-child {
+    padding-top: 16px;
+    font-size: 18px;
+    color: #7159c1;
+    text-transform: uppercase;
+}
+
+.details .item:last-child {
+    border: none;
 }
