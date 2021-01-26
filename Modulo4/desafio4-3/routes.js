@@ -9,6 +9,10 @@ routes.get('/teacher', function(req, res) {
     return res.render("teacher/index")
 })
 
+routes.get('/teacher', function(req, res) {
+    return res.redirect("teacher/create")
+})
+
 routes.get('/members', function(req, res) {
     return res.send("members")
 })
