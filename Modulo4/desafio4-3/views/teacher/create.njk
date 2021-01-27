@@ -1,0 +1,62 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+    <form class="card" method="POST" action="/teacher">
+        <section class="avatar" 
+            style="background: url(https://source.unsplash.com/collection/4821422/500x500) no-repeat  center center / cover">           
+        </section>
+
+        <section class="details">
+
+            <div class="item">
+                    <span>Foto</span>
+                    <input type="url" 
+                           name="avatar_at"
+                           >
+            </div>
+
+            <div class="item">
+                    <span>Nome Completo</span>
+                    <input type="text" 
+                           name="name"
+                           placeholder="Digite o seu nome completo">
+            </div>
+
+            <div class="item">
+                    <span>Data de Nascimento</span>
+                    <input type="date" 
+                           name="birth"
+                           >
+            </div>
+
+            <div class="item">
+                    <span>Grau de Escolaridade</span>
+                    
+                    <select name="select_schooling" >
+                        <option value="EMC">Ensino Médico Completo</option>
+                        <option value="ESC">Ensino Superior Completo</option>
+                        <option value="MSC">Mestrado Completo</option>
+                        <option value="DRC">Dourorado Completo</option>
+                    </select>
+
+            </div>
+
+            <div class="item">
+                    <span>Tipo de Aula</span>
+                    <span><input type="radio" name="teaching" value="P" checked> Presencial</span>
+                    <span><input type="radio" name="teaching" value="EaD"> Ensino a Distância</span>
+            </div>
+
+            <div class="item">
+                    <span>Área de Atuação</span>
+                    <input type="text" 
+                           name="area_operation" 
+                           placeholder="Matérias Lecionadas">
+            </div>
+
+            <button type="submit">Salvar</button>
+        </section>
+    </form>
+
+{% endblock content %}

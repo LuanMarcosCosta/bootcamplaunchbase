@@ -42,7 +42,7 @@ header {
 }
 
 .details {
-    padding: 16px;
+    padding-left: 16px;
 }
 
 .details .item {
@@ -51,8 +51,8 @@ header {
 }
 
 .details .item span {
-    padding: 8px 8px;
-    border-radius: 16px;
+    padding: 4px 4px;
+    border-radius: 14px;
     color: #777;
     display: inline-block;
     font-weight: bold;
@@ -61,12 +61,31 @@ header {
 }
 
 .details .item span:first-child {
-    padding-top: 8px;
-    font-size: 18px;
+    padding-top: 4px;
+    font-size: 14px;
     color: #7159c1;
     text-transform: uppercase;
 }
 
 .details .item:last-child {
     border: none;
+}
+
+
+/* FORMULÁRIO CREATE */
+
+input[type="radio"] {
+    width: initial;
+    margin-right: 4px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 8px 32px;
+    border-right: 8px;
+    height: 24px;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    color: white;
 }
